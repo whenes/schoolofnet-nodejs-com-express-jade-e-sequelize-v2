@@ -1,0 +1,14 @@
+extends ./../layout/main
+
+block content 
+  h1 #{title}
+
+  hr
+  h3 #{event.name}
+  ul
+    li #{event.id}
+    li #{event.description}
+  
+  hr
+
+  a(href="/events/list", class="btn btn-secondary") Back to list
